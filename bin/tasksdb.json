@@ -1,0 +1,80 @@
+[
+    {
+        "title": "Need a little work",
+        "desc": "It may be fun",
+        "status": "Incomplete",
+        "creation_date": "2024-07-25 09:40:15"
+    },
+    {
+        "title": "Eat a sandwich",
+        "desc": "Sandwich is so tasty",
+        "status": "Incomplete",
+        "creation_date": "2024-07-25 09:41:15"
+    },
+    {
+        "title": "Buy groceries",
+        "desc": "Carrot 2x, Potato 2 Kg",
+        "status": "Complete",
+        "creation_date": "2024-07-26 11:15:13"
+    },
+    {
+        "title": "Sleep well",
+        "desc": "An least 8h per day",
+        "status": "Complete",
+        "creation_date": "2024-07-26 11:26:02"
+    },
+    {
+        "title": "Get a shower",
+        "desc": "You stinky",
+        "status": "Incomplete",
+        "creation_date": "2024-07-29 01:02:53"
+    },
+    {
+        "title": "Car wash",
+        "desc": "On Tuesday",
+        "status": "Incomplete",
+        "creation_date": "2024-07-25 09:39:15"
+    },
+    {
+        "title": "Job is fun",
+        "desc": "Not fun at all",
+        "status": "Complete",
+        "creation_date": "2024-07-25 09:40:15"
+    },
+    {
+        "title": "Eat a sandwich",
+        "desc": "Yummy",
+        "status": "Completed",
+        "creation_date": "2024-07-25 09:41:15"
+    },
+    {
+        "title": "Buy a Birthday present",
+        "desc": "A teddy bear",
+        "status": "Incomplete",
+        "creation_date": "2024-07-29 01:02:53"
+    },
+    {
+        "title": "Touch grass",
+        "desc": "You really need",
+        "status": "Incomplete",
+        "creation_date": "2024-07-30 21:32:53"
+    },
+    {
+        "title": "Don't worry",
+        "desc": "Be happy",
+        "status": "Incomplete",
+        "creation_date": "2024-07-30 21:33:49"
+    },
+    {
+        "title": "Cheers",
+        "desc": "Have a seat and drink some water",
+        "status": "Complete",
+        "creation_date": "2024-08-05 01:58:21"
+    },
+    {
+        "title": "Что-то",
+        "desc": "Does it work?",
+        "status": "Incomplete",
+        "creation_date": "2024-08-06 16:03:11"
+    }
+]
