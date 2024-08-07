@@ -1,5 +1,6 @@
 # Charcoal Docs
 ## Introduction
+* `Charcoal` is your simple task manager;
 * `Charcoal` is written in C++ (so it's pretty fast);
 * `Charcoal` is written in a form of command line application with simple and intuitive CLI;
 * `Charcoal` stores your tasks in JSON files (so it's pretty easy for me, as a developer, to work with them, and for you, as a user, to import and export them).
@@ -21,5 +22,11 @@ For now, that means:
 
 Steps:
 1. Open your terminal in the project root directory, execute the following command and hope for the best:
-`make build`
-2. Run the resulted `Charcoal.exe`  in the `bin` folder.
+```
+make build
+```
+2. Run the resulted `Charcoal.exe`  in the `bin` folder:
+```
+cd bin
+./Charcoal.exe
+```
