@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Buy groceries",
+        "desc": "Carrot 2x, Potato 2 Kg",
+        "status": "Complete",
+        "creation_date": "2024-07-26 11:15:13"
+    },
+    {
+        "title": "Sleep well",
+        "desc": "An least 8h per day",
+        "status": "Complete",
+        "creation_date": "2024-07-26 11:26:02"
+    },
+    {
+        "title": "Get a shower",
+        "desc": "You stinky",
+        "status": "Incomplete",
+        "creation_date": "2024-07-29 01:02:53"
+    },
+    {
+        "title": "Touch grass",
+        "desc": "You really need",
+        "status": "Incomplete",
+        "creation_date": "2024-07-30 21:32:53"
+    }
+]
