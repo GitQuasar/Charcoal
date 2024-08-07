@@ -4,6 +4,11 @@
 * `Charcoal` is written in a form of command line application with simple and intuitive CLI;
 * `Charcoal` stores your tasks in JSON files (so it's pretty easy for me, as a developer, to work with them, and for you, as a user, to import and export them).
 
+## Pictures
+![Start menu](/assets/images/menu.png)
+![Tasks list](/assets/images/tasks.png)
+![Individual task info](/assets/images/taskinfo.png)
+
 ## Little side note:
 > `Charcoal` is in his pretty early stage.
 
