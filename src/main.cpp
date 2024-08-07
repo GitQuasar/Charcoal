@@ -30,16 +30,19 @@ void AddNewTask(Tasks &taskmngr)
   mvgetstr(1, 7, tBuffer);
   if (strlen(tBuffer) == 0)
   {
-    mvprintw(2, 0, "Task wasn't created: no title provided.");
-    mvprintw(3, 0, "Press any key to return.");
+    mvprintw(1, 7, "[ No title provided. Sad... :( ]");
+    mvprintw(2, 0, "[ Task wasn't created. Press any key to return. ]");
   }
   else
   {
     mvprintw(2, 0, "Description:");
     mvgetstr(2, 13, dBuffer);
+    if (strlen(dBuffer) == 0)
+    {
+      mvprintw(2, 13, "[ No description provided. Whatever, who needs it anyway... ]");
+    }
     taskmngr.SetTask(tBuffer, dBuffer, STATUS_INCOMPLETE, fmt::format("{:%Y-%m-%d %H:%M:%S}", fmt::localtime(std::time(nullptr))));
-    mvprintw(3, 0, "Task created.");
-    mvprintw(4, 0, "Press any key to return.");
+    mvprintw(3, 0, "[ Task was created. Press any key to return. ]");
   }
   refresh();
   getch();
@@ -175,7 +178,7 @@ void ViewTasks(std::vector<Task> &vTask)
     case '\n': // 'Enter', Show details
     {
       ViewTaskDetails(vTask[curR]); // View task details
-      taskOptions.Navigate(7, 1); // Show (draw) task options after
+      taskOptions.Navigate(5, 0); // Show (draw) task options after
       ViewTaskTable(0, 0, vTask, 25, 102, startR, curR, maxRpPage);
     }
     }
@@ -224,10 +227,11 @@ int main()
 {
   initscr();
   noecho();
+  curs_set(0);
   cbreak();
   keypad(stdscr, TRUE);
   Tasks TaskData; // Load tasks from JSON file
-  TaskData.DeserializeFromFile("tasksdb.json");
+  TaskData.DeserializeFromFile("taskdata.json");
 
   Menu mainMenu;
   mainMenu.SetEntry(Entry("View tasks", [&]() { ViewTasks(TaskData.GetTasks()); }));
@@ -235,5 +239,5 @@ int main()
   mainMenu.SetEntry(Entry("Remove task", [&]() { RemoveTasks(TaskData, TaskData.GetTasks()); }));
   mainMenu.Navigate(0, 0);
 
-  TaskData.SerializeToFile("tasksdb.json");
+  TaskData.SerializeToFile("taskdata.json");
 }

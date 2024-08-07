@@ -23,7 +23,7 @@ void Menu::DisplayEntries(int x, int y)
   {
     if (i == m_Selection) { attron(A_REVERSE); } // ON Highlight the current selection
     mvprintw(x + i, y, ("[%d] - " + m_Entries[i].GetTitle()).c_str(), i);
-    mvprintw(x + i, y + 30, "[%d][%d][%d] - I, Selection, Size", i, m_Selection, (int)m_Entries.size());
+    // mvprintw(x + i, y + 30, "[%d][%d][%d] - I, Selection, Size", i, m_Selection, (int)m_Entries.size());
     if (i == m_Selection) { attroff(A_REVERSE); } // OFF Highlight the current selection
   }
   mvprintw(x + m_Entries.size() + 1, y, "[Up], [Down] - navigate");
