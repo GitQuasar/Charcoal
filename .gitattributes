@@ -1,0 +1,3 @@
+include/fmt/* linguist-vendored
+include/pdcurses/* linguist-vendored
+include/rapidjson/* linguist-vendored
